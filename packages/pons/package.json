@@ -1,5 +1,5 @@
 {
-  "name": "@hoodtoolkit/pons",
+  "name": "@hood-toolkit/pons",
   "version": "0.1.0",
   "description": "Pons V2 on Robinhood Chain: decode launches and trades, read a curve, quote a buy or a sell exactly, build the unsigned transaction and verify it before a wallet signs.",
   "license": "MIT",
@@ -42,7 +42,7 @@
     "clean": "rimraf dist .turbo"
   },
   "dependencies": {
-    "@hoodtoolkit/evm": "workspace:^"
+    "@hood-toolkit/evm": "workspace:^"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

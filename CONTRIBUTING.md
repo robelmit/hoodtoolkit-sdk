@@ -10,7 +10,7 @@ pnpm install
 pnpm check        # build, typecheck, test and lint: must be green before a pull request
 ```
 
-Work on one package with `pnpm --filter @hoodtoolkit/<name> test -- --watch`.
+Work on one package with `pnpm --filter @hood-toolkit/<name> test -- --watch`.
 
 ## Rules the code follows
 

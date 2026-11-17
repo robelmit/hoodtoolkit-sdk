@@ -4,8 +4,8 @@ Trade-building tools for Pons, the launchpad on Robinhood Chain, from the team b
 
 | Package | What it does |
 |---|---|
-| [`@hoodtoolkit/pons`](packages/pons) | Decode Pons events, read a token's curve with everything that differs per launch, quote in the contract's own arithmetic, build the unsigned trade and its exact-amount approval, and verify them |
-| [`@hoodtoolkit/evm`](packages/evm) | The small EVM client the hoodtoolkit packages share: paced, retrying, with log ranges that are split when refused and never skipped. No dependencies |
+| [`@hood-toolkit/pons`](packages/pons) | Decode Pons events, read a token's curve with everything that differs per launch, quote in the contract's own arithmetic, build the unsigned trade and its exact-amount approval, and verify them |
+| [`@hood-toolkit/evm`](packages/evm) | The small EVM client the hoodtoolkit packages share: paced, retrying, with log ranges that are split when refused and never skipped. No dependencies |
 
 ## How it was checked
 
@@ -13,7 +13,7 @@ Trade-building tools for Pons, the launchpad on Robinhood Chain, from the team b
 - A live test (`LIVE=1`) quotes a buy on the newest open curve and has the chain's node simulate the built transaction; when last run, the simulated output equalled the quote exactly.
 
 ```bash
-LIVE=1 pnpm --filter @hoodtoolkit/pons test   # reads the chain and simulates; never sends
+LIVE=1 pnpm --filter @hood-toolkit/pons test   # reads the chain and simulates; never sends
 ```
 
 ## Principles

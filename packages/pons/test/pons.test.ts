@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs';
-import { ERC20, ROBINHOOD_CHAIN_ID, ZERO_ADDRESS, addressWord, encodeCall, uintWord, type EvmRpc } from '@hoodtoolkit/evm';
+import { ERC20, ROBINHOOD_CHAIN_ID, ZERO_ADDRESS, addressWord, encodeCall, uintWord, type EvmRpc } from '@hood-toolkit/evm';
 import { describe, expect, it } from 'vitest';
 import {
   CURVE,

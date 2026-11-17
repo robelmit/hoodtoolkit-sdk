@@ -8,7 +8,7 @@
  * tokenized stock), and so the quote asset's decimals.
  */
 
-import { addressAt, topicAddress, uintAt, wordCount } from '@hoodtoolkit/evm';
+import { addressAt, topicAddress, uintAt, wordCount } from '@hood-toolkit/evm';
 import { PONS_TOPICS } from './constants';
 
 export interface RawLog {

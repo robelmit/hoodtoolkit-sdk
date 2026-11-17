@@ -1,12 +1,12 @@
-# @hoodtoolkit/pons
+# @hood-toolkit/pons
 
 Pons V2 on Robinhood Chain, for builders: decode its events, read a token's curve, quote a buy or a sell to the unit, build the unsigned transaction, and verify the bytes before a wallet signs.
 
 Pons publishes no API. Everything here is read from the chain.
 
 ```ts
-import { createEvmRpc, ROBINHOOD_PUBLIC_RPC } from '@hoodtoolkit/evm';
-import { approvalFor, buildTrade, quote, verifyTrade } from '@hoodtoolkit/pons';
+import { createEvmRpc, ROBINHOOD_PUBLIC_RPC } from '@hood-toolkit/evm';
+import { approvalFor, buildTrade, quote, verifyTrade } from '@hood-toolkit/pons';
 
 const rpc = createEvmRpc({ url: ROBINHOOD_PUBLIC_RPC });
 
@@ -27,7 +27,7 @@ verifyTrade(tx, q); // throws TradeMismatch with the reason
 ## Install
 
 ```
-npm i @hoodtoolkit/pons @hoodtoolkit/evm
+npm i @hood-toolkit/pons @hood-toolkit/evm
 ```
 
 Node 20 or later. No other dependencies.
@@ -60,7 +60,7 @@ Progress uses the quote actually paid in. The curve's pricing reserve includes a
 
 `decodeLaunch`, `decodeTrade`, `decodeGraduation`, `decodeSweep` take a raw log and return the event or `null`. The topics are in `PONS_TOPICS`.
 
-Curves are deployed per token, so trades are found by topic with no address filter. On the public endpoint that works over short block ranges only; `@hoodtoolkit/evm`'s `getLogs` handles the ranges. Launches and graduations come from the factory and can be read over long ranges.
+Curves are deployed per token, so trades are found by topic with no address filter. On the public endpoint that works over short block ranges only; `@hood-toolkit/evm`'s `getLogs` handles the ranges. Launches and graduations come from the factory and can be read over long ranges.
 
 `isSnipeTaxed(trade)` marks a buy whose tax is a tenth of the trade or more. Keep those in a trade list and out of a price series.
 
@@ -90,8 +90,8 @@ It refuses with a `PonsQuoteError` and a code: `GRADUATED`, `BAD_STATE`, `BAD_AM
 - 17 unit tests and 2 live tests.
 
 ```
-pnpm --filter @hoodtoolkit/pons test
-LIVE=1 pnpm --filter @hoodtoolkit/pons test    # reads the chain and simulates; never sends
+pnpm --filter @hood-toolkit/pons test
+LIVE=1 pnpm --filter @hood-toolkit/pons test    # reads the chain and simulates; never sends
 ```
 
 ## What it does not do

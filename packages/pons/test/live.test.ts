@@ -1,11 +1,11 @@
 /**
  * Live checks against Robinhood Chain. They run only with LIVE=1, read the chain and simulate, and never send.
  *
- *   LIVE=1 pnpm --filter @hoodtoolkit/pons test
+ *   LIVE=1 pnpm --filter @hood-toolkit/pons test
  *   HOOD_RPC_URL=<your endpoint> picks the endpoint (default: the public one, which rate-limits)
  */
 
-import { FILTERED_LOG_SPAN, ROBINHOOD_CHAIN_ID, ROBINHOOD_PUBLIC_RPC, blockNumber, chainId, createEvmRpc, getLogs, toQuantity, uintAt } from '@hoodtoolkit/evm';
+import { FILTERED_LOG_SPAN, ROBINHOOD_CHAIN_ID, ROBINHOOD_PUBLIC_RPC, blockNumber, chainId, createEvmRpc, getLogs, toQuantity, uintAt } from '@hood-toolkit/evm';
 import { describe, expect, it } from 'vitest';
 import { PONS_FACTORY, PONS_TOPICS, buildTrade, decodeLaunch, decodeTrade, findLaunch, progressPct, quote, readCurve, verifyTrade } from '../src';
 

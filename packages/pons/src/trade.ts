@@ -10,7 +10,7 @@
  * Nothing here signs, sends or holds a key.
  */
 
-import { ERC20, ROBINHOOD_CHAIN_ID, address, addressWord, decodeCall, encodeCall, isAddress, sameAddress, uintWord, type EvmRpc } from '@hoodtoolkit/evm';
+import { ERC20, ROBINHOOD_CHAIN_ID, address, addressWord, decodeCall, encodeCall, isAddress, sameAddress, uintWord, type EvmRpc } from '@hood-toolkit/evm';
 import { CURVE } from './constants';
 import { PonsQuoteError, buyMaths, sellMaths, withSlippage } from './curve';
 import { findLaunch, readCurve, readSnipeTaxBps, type Curve } from './read';

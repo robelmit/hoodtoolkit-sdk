@@ -1,9 +1,9 @@
-# @hoodtoolkit/evm
+# @hood-toolkit/evm
 
 The small EVM client the hoodtoolkit packages share. It reads a JSON-RPC endpoint and nothing else: no signing, no sending, no dependencies.
 
 ```ts
-import { ROBINHOOD_PUBLIC_RPC, blockNumber, createEvmRpc, getLogs, readErc20 } from '@hoodtoolkit/evm';
+import { ROBINHOOD_PUBLIC_RPC, blockNumber, createEvmRpc, getLogs, readErc20 } from '@hood-toolkit/evm';
 
 const rpc = createEvmRpc({ url: ROBINHOOD_PUBLIC_RPC });
 const head = await blockNumber(rpc);
@@ -14,7 +14,7 @@ const usdg = await readErc20(rpc, '0x5fc5360d0400a0fd4f2af552add042d716f1d168');
 ## Install
 
 ```
-npm i @hoodtoolkit/evm
+npm i @hood-toolkit/evm
 ```
 
 Node 20 or later.
@@ -47,7 +47,7 @@ So pick the span per query. For anything that must keep up with the chain, use a
 ## Tests
 
 ```
-pnpm --filter @hoodtoolkit/evm test
+pnpm --filter @hood-toolkit/evm test
 ```
 
 15 tests, with no network.

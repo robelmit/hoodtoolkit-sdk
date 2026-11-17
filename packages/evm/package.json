@@ -1,5 +1,5 @@
 {
-  "name": "@hoodtoolkit/evm",
+  "name": "@hood-toolkit/evm",
   "version": "0.1.0",
   "description": "A small EVM JSON-RPC client and ABI helpers for Robinhood Chain: paced, retrying, with log ranges the public endpoint will serve. No dependencies.",
   "license": "MIT",

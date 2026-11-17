@@ -10,7 +10,7 @@ You will get an answer within three working days. A fix for anything that can lo
 
 ## What counts
 
-- `verifyTrade` or `verifyApproval` in `@hoodtoolkit/pons` accepting a transaction that is anything other than the quoted trade for the user's own wallet, or an approval for more than the trade's amount.
+- `verifyTrade` or `verifyApproval` in `@hood-toolkit/pons` accepting a transaction that is anything other than the quoted trade for the user's own wallet, or an approval for more than the trade's amount.
 - A quote that differs from what the Pons curve would pay.
 - An amount read with the wrong decimals, or an unknown value shown as zero.
 - Anything in the bots that lets one group read or change another group's settings.
@@ -24,5 +24,5 @@ You will get an answer within three working days. A fix for anything that can lo
 ## Using it safely
 
 - Always run `verifyTrade` on the bytes you are about to sign, not on the object you built them from.
-- Pin the version of `@hoodtoolkit/pons`. Pons can change its contracts; a new version is a change to what gets signed.
+- Pin the version of `@hood-toolkit/pons`. Pons can change its contracts; a new version is a change to what gets signed.
 - Use your own RPC endpoint for anything that matters. Public endpoints are rate-limited and can return stale state.

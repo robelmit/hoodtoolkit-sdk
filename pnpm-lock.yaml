@@ -59,7 +59,7 @@ importers:
 
   packages/pons:
     dependencies:
-      '@hoodtoolkit/evm':
+      '@hood-toolkit/evm':
         specifier: workspace:^
         version: link:../evm
     devDependencies:
