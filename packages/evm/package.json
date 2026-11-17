@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "description": "A small EVM JSON-RPC client and ABI helpers for Robinhood Chain: paced, retrying, with log ranges the public endpoint will serve. No dependencies.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robelmit/hoodtoolkit-sdk.git",
+    "directory": "packages/evm"
+  },
+  "homepage": "https://github.com/robelmit/hoodtoolkit-sdk/tree/main/packages/evm#readme",
+  "bugs": {
+    "url": "https://github.com/robelmit/hoodtoolkit-sdk/issues"
+  },
   "keywords": [
     "robinhood-chain",
     "pons",

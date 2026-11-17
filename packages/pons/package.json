@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "description": "Pons V2 on Robinhood Chain: decode launches and trades, read a curve, quote a buy or a sell exactly, build the unsigned transaction and verify it before a wallet signs.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robelmit/hoodtoolkit-sdk.git",
+    "directory": "packages/pons"
+  },
+  "homepage": "https://github.com/robelmit/hoodtoolkit-sdk/tree/main/packages/pons#readme",
+  "bugs": {
+    "url": "https://github.com/robelmit/hoodtoolkit-sdk/issues"
+  },
   "keywords": [
     "robinhood-chain",
     "pons",
