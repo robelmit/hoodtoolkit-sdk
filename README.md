@@ -39,7 +39,7 @@ pnpm check        # build, typecheck, test, lint
 | **hoodtoolkit-sdk** (this one) | The Pons SDK and the shared EVM client |
 | [hoodtoolkit-feed](https://github.com/robelmit/hoodtoolkit-feed) | The launch feed: launches, curve trades and graduations as a stream of events |
 | [hoodtoolkit-bots](https://github.com/robelmit/hoodtoolkit-bots) | Telegram and Discord community bots |
-| [hoodtoolkit-agents](https://github.com/robelmit/hoodtoolkit-agents) | A read-only MCP server for AI agents, and an HTTP API |
+| [hoodtoolkit-agents](https://github.com/robelmit/hoodtoolkit-agents) | A read-only MCP server for AI agents, an HTTP API, and the live site |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) to contribute and [SECURITY.md](SECURITY.md) to report a vulnerability.
 
